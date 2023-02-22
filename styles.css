@@ -46,7 +46,7 @@ h4
     margin-bottom: 0.5rem;
 }
 
-.container-section > img{
+.container-section img{
     width: 100%;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
@@ -92,6 +92,9 @@ button
     border-radius: 10px;
     color: hsl(0, 0%, 100%);
 }
+button:hover{
+    background-color: hsl(158, 32%, 15%);
+}
 button img{
     max-width: 5%;
     margin-right: 0.5rem;
@@ -106,8 +109,36 @@ button img{
     text-align: center; 
     margin-top: auto;
     color: hsl(228, 12%, 48%);
+    padding: 2rem 0rem 2rem;
+    max-width: 80vw;
+    margin: auto;
 }
 .attribution a 
 { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width: 700px){
+    body
+    {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .container{
+        flex-direction: row;
+        width: 600px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .container-section
+    {
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .container-section:nth-of-type(2) > *
+    {
+        flex-grow: 1;
+    }
 }
