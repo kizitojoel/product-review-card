@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*
+{
+    font-family: "Montserrat", sans-serif;
+    /* box-sizing: border-box; */
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    max-width: 100vw;
+    /* box-sizing: border-box; */
+}
+.container
+{
+    width: 320px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+}
+.container-section
+{
+    display: flex;
+    flex-direction: column;
+}
+h4
+{
+    font-family: "fraunces", serif;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+    
+}
+.header
+{
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.25rem;
+    font-size: 14px;
+    margin-top: 1rem;
+}
+.perfume-name
+{
+    font-size: 36px;
+    font-family: "fraunces", serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container-section > img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.prices
+{
+    display: flex;
+    align-items: center;
+}
+.actual, .cancelled
+{
+    width: 50%;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+.actual{
+    color: hsl(158, 36%, 37%);
+    font-size: 32px;
+    font-family: "fraunces", serif;
+}
+.cancelled{
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+p
+{
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5rem;
+    margin-bottom: 0px;
+}
+button
+{
+    background-color: hsl(158, 36%, 37%);
+    width: 80%;
+    align-self: center;
+    padding: 0.75rem;
+    border: 0px;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+}
+button img{
+    max-width: 5%;
+    margin-right: 0.5rem;
+}
+.container-section:nth-of-type(2)
+{
+    background-color: hsl(0, 0%, 100%);
+    padding: 12px;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: auto;
+    color: hsl(228, 12%, 48%);
+}
+.attribution a 
+{ 
+    color: hsl(228, 45%, 44%); 
+}
