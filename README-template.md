@@ -16,7 +16,6 @@ This is a solution to the [Product preview card component challenge on Frontend 
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -27,24 +26,20 @@ This is a solution to the [Product preview card component challenge on Frontend 
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
-- See hover and focus states for interactive elements
 
 ### Screenshot
+#### _Desktop Version_
 
-![](./screenshot.jpg)
+![](./product-screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+#### _Mobile Version_
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./product-screenshot-mobile.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/kizitojoel/product-review-card
+- Live Site URL: https://kizitojoel.github.io/product-review-card/
 
 ## My process
 
@@ -55,59 +50,61 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Google Fonts](https://fonts.google.com/)
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
+I delved deeper into mobile first workflow and learnt more about media queries. I learned about the four/five major device breakpoints to use which are:
+- Mobile
+- Tablet
+- Laptop
+- 4K Screen*
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<picture>
+        <source media="(min-width: 700px)" srcset="images/image-product-desktop.jpg">
+        <!-- <source media="(min-width: 300px)" srcset="images/image-product-mobile.jpg"> -->
+        <img src="images/image-product-mobile.jpg" alt="imagealttext">
+</picture>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
+@media screen and (min-width: 700px){
+    body
+    {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .container{
+        flex-direction: row;
+        width: 600px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .container-section
+    {
+        width: 50%;
+        box-sizing: border-box;
+    }
+    .container-section:nth-of-type(2) > *
+    {
+        flex-grow: 1;
+    }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I'd like to start integrating frontend software libraries such as Bootstrap among others into my work as I code beautiful websites
 
 ### Useful resources
 
 - [CSS Reference.io](https://cssreference.io/property/letter-spacing/) - This helped me to discover css keywords for letter spacing.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [W3C School](https://www.w3schools.com/css/css_rwd_mediaqueries.asp) - This is an amazing article which helped me finally understand CSS Breakpoints. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- GitHub - [Joel Kizito](https://github.com/kizitojoel)
+- Frontend Mentor - [kizitojoel](https://www.frontendmentor.io/profile/kizitojoel)
